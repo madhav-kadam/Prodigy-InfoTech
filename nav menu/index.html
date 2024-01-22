@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu-Color</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="site">
+		<nav class="nav">
+			<div class="nav__title">Portfolio</div>
+			<ul class="nav__list">
+				<a href="#about"><li class="nav__item">About</li></a>
+				<a href="#acadmic"><li class="nav__item">Acadmic</li></a>
+				<a href="#contact"><li class="nav__item">Contact</li></a>
+			</ul>
+		</nav>
+
+		<div class="hero">
+			<h1>Madhav Kadam</h1>
+		</div>
+
+		<section class="section" id="about">
+			<h2>About</h2>
+			<p>I'm Madhav Kadam, a dedicated computer engineering student with a passion for technology and innovation. Currently pursuing Computer Engineering  at <a href="https://mmit.edu.in/">Marathwada Mitra Mandal Institute of Technology Pune</a>, I am on a journey to merge theoretical knowledge with practical applications in the realm of computer engineering</p>
+		</section>
+
+		<section class="section" id="acadmic">
+			<h2>Acadmic</h2>
+			<p>I am on track to graduate with a degree in Computer Engineering with a focus on Full Stack Development. My coursework has equipped me with a solid foundation in Web Development, Database Management.</p>
+		</section>
+
+		<footer id="contact">
+			<a href="https://www.linkedin.com/in/madhav-kadam-626377288/#:~:text=www.linkedin.com/in/madhav%2Dkadam%2D626377288" style="color: blue;">LinkedIn</a>
+		</footer>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const nav = document.querySelector(".nav");
+
+			window.addEventListener("scroll", function () {
+				if (window.scrollY > 0) {
+					nav.classList.add("nav-scrolled");
+				} else {
+					nav.classList.remove("nav-scrolled");
+				}
+			});
+		});
+	</script>
+</body>
+</html>
