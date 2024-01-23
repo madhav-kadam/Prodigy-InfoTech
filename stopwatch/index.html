@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+	<title>Stopwatch</title>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+	<div id="stopwatch">
+		<h2 style="font-family: 'Pixelify Sans';font-size: 40px;">STOPWATCH</h2>
+		<h1 id="display">00:00:00</h1>
+		<div id="buttons">
+		<button onclick="startStop()">Start</button>
+		<button onclick="recordLap()">Lap</button>
+		<button onclick="reset()">Reset</button>
+		</div>
+		<div id="laps"></div>
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+</html>
